@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine's Day Nani ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+<style>
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    text-align:center;
+    overflow:hidden;
+}
+
+.slide{
+    display:none;
+    height:100vh;
+    padding:40px;
+    color:white;
+}
+
+.active{
+    display:block;
+}
+
+h1,h2,p{
+    animation:fadeIn 2s ease-in-out;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    font-size:18px;
+    cursor:pointer;
+    margin:15px;
+    background:#ff4d6d;
+    color:white;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff1e4d;
+    transform:scale(1.1);
+}
+
+input{
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    font-size:16px;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* Backgrounds */
+.slide1{background:linear-gradient(to right,#ff758c,#ff7eb3);}
+.slide2{background:linear-gradient(to right,#ff9a9e,#fad0c4);}
+.slide3{background:linear-gradient(to right,#a18cd1,#fbc2eb);}
+.slide4{background:linear-gradient(to right,#ff6a88,#ff99ac);}
+.slide5{background:linear-gradient(to right,#fbc2eb,#a6c1ee);}
+.slide6{background:linear-gradient(to right,#ff9a9e,#fecfef);}
+.slide7{background:linear-gradient(to right,#ff758c,#ff7eb3);}
+.slide8{background:linear-gradient(to right,#ff512f,#dd2476);}
+.slide9{background:linear-gradient(to right,#ff9966,#ff5e62);}
+.slide10{background:linear-gradient(to right,#ff758c,#ff7eb3);}
+
+#fireworks{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.main-title{
+    font-family: 'Pacifico', cursive;
+    font-size: 55px;
+    color: #fff;
+    text-shadow: 3px 3px 10px #ff1e4d;
+}
+
+.love-message{
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #fff;
+    line-height: 1.6;
+    text-shadow: 2px 2px 8px #ff4d6d;
+}
+
+.question-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(to right, #ffffff, #ffd6e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.final-text{
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 15px #ffffff;
+}
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  animation: typing 4s steps(40, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- Slide 1 -->
+<div class="slide slide1 active">
+<h1 class="main-title typewriter">Happy Valentine's Day Nani ❤️</h1>
+<img src="nani.gif" width="350">
+<br>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<!-- Slide 2 -->
+<div class="slide slide2">
+<p class="love-message" >
+I am so happy nani nuvvu na life loki vachinandhuku,
+nuvvu yeppudu ila nathoney vundali nani,
+I hope you never leave me,
+and manam ilanti valantine week ni chala years cheskovali until our last breath,
+I hope it will be true.
+</p>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide slide3">
+<h2 class="question-text" >Will You Be My Life Partner? 💍</h2>
+<button onclick="yesClick()">Yes ❤️</button>
+<button onclick="noClick()">No 😜</button>
+<p id="noMsg" class="love message"></p>
+</div>
+
+<!-- Slide 4 -->
+<div class="slide slide4">
+<h2 class="love-message"> Thanx For Being My Life Partner Nani ❤️</h2>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<!-- Slide 5 -->
+<div class="slide slide5">
+<h2>Enter Password 🔐</h2>
+<input type="password" id="password">
+<br>
+<button onclick="checkPassword()">Submit</button>
+<p id="passMsg"></p>
+</div>
+
+<!-- Slide 6 -->
+<div class="slide slide6">
+<img src="nani.rings.avif" width="300">
+<h2> I Love You So Much Nani 🥰💕💎</h2>
+<p class="love-message">Idhi mana valantine ki oka small gift nani💍</p>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<!-- Slide 7 -->
+<div class="slide slide7">
+<img src="bubble.chocolate.jpg" width="300">
+<p class="love-message">Idhi nenu neeku iche first chocolate nani🍫 keep it with you💕, because idhi oka memori kadha.</p>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<!-- Slide 8 -->
+<div class="slide slide8">
+<img src="gift.jpg" width="300">
+<p class="love-message">
+Neeku ee gift yenti ani thelusukovalani vuntey nannu kalavalsindhey nani😙,
+mari pedha gift kadhu anuko but nenu isthunna kabatti
+adhi neeku pedha gift ye anukuntav ani anukuntunna anthey ga😁😜 ...
+</p>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<!-- Slide 9 -->
+<div class="slide slide9">
+    <canvas id="fireworks"></canvas>
+    <img src="thank-you-gif.gif" alt="">
+<h2>Thank You For All Your Patience To Open All Slides Nani 🥰</h2>
+<h1 class="love-message">Once Again Happy Valentine's Day Nani💘💌😘🫶💍</h1>
+<h2 class="love-message">Love You Nani 💖</h2>
+</div>
+
+<script>
+let current = 0;
+let slides = document.querySelectorAll(".slide");
+
+function nextSlide(){
+    slides[current].classList.remove("active");
+    current++;
+    slides[current].classList.add("active");
+}
+
+function yesClick(){
+    slides[current].classList.remove("active");
+    current++;
+    slides[current].classList.add("active");
+}
+
+function noClick(){
+    document.getElementById("noMsg").innerText =
+    "Yenti no click chesav, neeku no option ledhu kani velli yes click chai nanna 😜";
+}
+
+function checkPassword(){
+    let pass = document.getElementById("password").value;
+    if(pass === "02/05/2025"){
+        slides[current].classList.remove("active");
+        current++;
+        slides[current].classList.add("active");
+    }else{
+        document.getElementById("passMsg").innerText = "Enter valid password ❌";
+    }
+}
+
+// Fireworks Effect
+let canvas = document.getElementById("fireworks");
+let ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+function createFirework(){
+    let x = Math.random() * canvas.width;
+    let y = Math.random() * canvas.height / 2;
+    let colors = ["#ff4d6d","#ff99ac","#ffffff","#ffd700","#ff1e4d"];
+
+    for(let i=0;i<50;i++){
+        particles.push({
+            x:x,
+            y:y,
+            radius:2,
+            color:colors[Math.floor(Math.random()*colors.length)],
+            speedX:(Math.random()-0.5)*6,
+            speedY:(Math.random()-0.5)*6,
+            life:100
+        });
+    }
+}
+
+function animateFireworks(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    particles.forEach((p,index)=>{
+        p.x += p.speedX;
+        p.y += p.speedY;
+        p.life--;
+
+        ctx.beginPath();
+        ctx.arc(p.x,p.y,p.radius,0,Math.PI*2);
+        ctx.fillStyle = p.color;
+        ctx.fill();
+
+        if(p.life <=0){
+            particles.splice(index,1);
+        }
+    });
+
+    requestAnimationFrame(animateFireworks);
+}
+
+setInterval(createFirework,800);
+animateFireworks();
+
+</script>
+
+</body>
+</html>
